@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json </title>
+</head>
+<body>
+    <h2>JSON</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const myDetails = '{"name":"prem", "age":"50", "car":"creta"}';
+        const object = JSON.parse(myDetails);
+        document.getElementById("demo").innerHTML = object.car;
+//challenge--2----//
+const JSONObj = 
+{   "name": "SBOA",
+     " year": "1988",
+       "rank": "1", 
+     "students": "1000",
+};
+document.write("<h1>JSON Example</h1>");
+document.write("<br>");
+document.write("<h3>school Name = " + JSONObj.name + "</h3>");
+document.write("<br>");
+document.write("<h3> Year =  " + JSONObj.year + "</h3>");
+document.write("<br>");
+document.write("<h3> Rank In The City =  " + JSONObj.rank + "</h3>");
+document.write("<br>");
+document.write("<h3> No Of Students Studying =  " + JSONObj.students + "</h3>");
+document.write("<br>");
+
+
+
+
+    </script>
+    
+</body>
+</html>
